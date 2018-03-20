@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/estilo.css">
+     <title>Profesor</title>
+</head>
+<body>
+     <header >
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <div class="container">
+                    <div class="collapse navbar-collapse" id="navbar">
+                         <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                   <a href="profesor.html" class="navbar-brand"> <img src="img/ic_home_white_48dp_1x.png" width="30" height="30" alt="" class="d-inline-block align-top">   </a>
+                              </li>
+                              <li class="nav-item dropdown active">
+                                   <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Reactivos
+                                   </a>
+                                   <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                        <a href="profesor_reactivos.html" class="dropdown-item">Crear reactivos</a>
+                                        <a href="profesor_ver_reactivos.html" class="dropdown-item">Ver reactivos</a>
+
+                                   </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                   <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Cuestinarios
+                                   </a>
+                                   <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                        <a href="#" class="dropdown-item">Crear Cuestionarios</a>
+                                        <a href="#" class="dropdown-item">Ver cuestionarios</a>
+                                   </div>
+                              </li>
+                              <li class="nav-item">
+                                   <a href="#" class="nav-link">Difundir Cuestionario</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a href="#" class="nav-link disabled">Link Extra</a>
+                              </li>
+                         </ul>
+                         <button class="btn btn-danger btn-sm my-s my-sm-0 " type="submit">Cerrar Sesion</button>
+                    </div>
+               </div>
+          </nav>
+     </header>
+     <br>
+     <div class="container mt-5">
+          <div class="row">
+               <div class="col">
+                    <h2>Profesor </h2>
+                    <h4>Consulta de Reactivos</h4>
+                    <div class="col-12"><hr></div>
+                         <div class="row">
+                              <div class="col mt-0">
+                                   <br>
+                                   <h4>Filtro</h4>
+                                   <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                        <strong>Hola!</strong><br>Utiliza los botones de abajo para filtrar los reactivos con las especificaciones que tu necesitas
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                        </button>
+                                   </div>
+                                   <div class="form-group row justify-content-md-center">
+                                        <div class="col-4 mb-4 mt-0">
+                                             <label for="Unidad">Estatus</label>
+                                             <select name="Unidad" id="Unidad" class="form-control">
+                                                  <option value="unidad1">Todos</option>
+                                                  <option value="unidad2">Nuevos</option>
+                                                  <option value="unidad3">Denegados</option>
+                                             </select>
+                                        </div>
+                                        <div class="col-4 mb-4 mt-0">
+                                             <label for="materia">Materia</label>
+                                             <select name="materia" id="materia" class="form-control">
+                                                  <option value="ingles1">Todas</option>
+                                                  <option value="ingles1">Ingles 1</option>
+                                                  <option value="ingles2">Ingles 2</option>
+                                                  <option value="ingles4">Ingles 4</option>
+                                             </select>
+                                        </div>
+                                        <div class="col-4 mb-4 mt-0">
+                                             <label for="Unidad">Unidad</label>
+                                             <select name="Unidad" id="Unidad" class="form-control">
+                                                  <option value="ingles1">Todas</option>
+                                                  <option value="unidad1">Unidad 1</option>
+                                                  <option value="unidad2">Unidad 2</option>
+                                                  <option value="unidad3">Unidad 3</option>
+                                             </select>
+                                        </div>
+                                        <div class="col-4 mb-0">
+                                             <label for="Unidad">Competencias</label>
+                                             <select name="Unidad" id="Unidad" class="form-control">
+                                                  <option value="ingles1">Todas</option>
+                                                  <option value="unidad1">Grammar</option>
+                                                  <option value="unidad2">Reading</option>
+                                                  <option value="unidad3">Listening</option>
+                                             </select>
+                                        </div>
+                                        <div class="col-8 mb-0">
+                                             <label for="Unidad">Punto Gramaticales</label>
+                                             <select name="Unidad" id="Unidad" class="form-control">
+                                                  <option value="ingles1">Todas</option>
+                                                  <option value="unidad1">8.4.1 tema1</option>
+                                                  <option value="unidad2">8.4.2 tema2</option>
+                                                  <option value="unidad3">8.4.3 tema3</option>
+                                             </select>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                         <br>
+                         <br>
+                         <h3>Reactivos</h3>
+                         <div class="col-12"><hr></div>
+                         <div class="card w-100 mt-3">
+                              <div class="card-body">
+                                   <table class="table">
+                                        <thead class="thead-dark">
+                                             <tr>
+                                                  <th scope="col">Ingles 1</th>
+                                                  <th scope="col">Lic. Karla Alvez Dominguez</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                             <tr class="table-secondary">
+                                                  <th scope="row">No. de Unidad</th>
+                                                  <td>3.1.2 - Verbo to BE</td>
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Pregunta</th>
+                                                  <td>Como se llama el caballo blanco de Napolen?</td>
+                                             </tr>
+                                             <tr class="table-success">
+                                                  <th scope="row">Opcion 1</th>
+                                                  <td>Jacob</td>
+
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Opcion 2</th>
+                                                  <td>Larry</td>
+
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Opcion 3</th>
+                                                  <td>Larry</td>
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Opcion 4</th>
+                                                  <td>Larry</td>
+                                             </tr>
+                                        </tbody>
+                                   </table>
+                                   <div class="row">
+                                        <div class="col-10">
+                                             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+                                                  Modificar
+                                             </button>
+                                             <a href="#" class="btn btn-danger">Eliminar</a>
+                                        </div>
+                                        <div class="col-2 ">
+                                             <div class="p-1 mb-1 mr-1 bg-primary text-white text-center">Nuevo</div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="card w-100 mt-3">
+                              <div class="card-body">
+                                   <table class="table">
+                                        <thead class="thead-dark">
+                                             <tr>
+                                                  <th scope="col">Ingles 1</th>
+                                                  <th scope="col">Lic. Karla Alvez Dominguez</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                             <tr class="table-secondary">
+                                                  <th scope="row">No. de Unidad</th>
+                                                  <td>3.1.2 - Verbo to BE</td>
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Pregunta</th>
+                                                  <td>Como se llama el caballo blanco de Napolen?</td>
+                                             </tr>
+                                             <tr class="table-success">
+                                                  <th scope="row">Opcion 1</th>
+                                                  <td>Jacob</td>
+
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Opcion 2</th>
+                                                  <td>Larry</td>
+
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Opcion 3</th>
+                                                  <td>Larry</td>
+                                             </tr>
+                                             <tr>
+                                                  <th scope="row">Opcion 4</th>
+                                                  <td>Larry</td>
+                                             </tr>
+                                        </tbody>
+                                   </table>
+                                   <div class="row">
+                                        <div class="col-10">
+                                             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+                                                  Modificar
+                                             </button>
+                                             <a href="#" class="btn btn-danger">Eliminar</a>
+                                        </div>
+                                        <div class="col-2 ">
+                                             <div class="p-1 mb-1 mr-1 bg-warning text-white text-center" >Denegado</div>
+
+                                             <!-- <a href="#" class="btn btn-danger">Eliminar</a> -->
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                         <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                   <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="exampleModalLongTitle">Reactivo 1</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                        </button>
+                                   </div>
+                                   <div class="modal-body">
+                                        <div class="row">
+                                             <div class="col-12 p-3 mb-0 bg-dark text-light">
+                                                  <p>Ingles 1</p>
+                                             </div>
+                                        </div>
+
+                                        <div class="row">
+                                             <div class="col-3 p-3 mb-0 bg-light text-dark">
+                                                  <p>Unidad 1</p>
+                                             </div>
+                                             <div class="col-9 p-3 mb-0 bg-light text-dark">
+                                                  <p>3.1.2 - Verbo to BE</p>
+                                             </div>
+                                        </div>
+
+
+                                        <form>
+                                             <div class="form-group">
+                                                  <label for="exampleFormControlTextarea1">Pregunta</label>
+                                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                  <small id="emailHelp" class="form-text text-muted">Redacta aca el reactivo </small>
+                                             </div>
+                                             <div class="form-group">
+                                                  <label for="exampleInputPassword1">Opcion verdadera</label>
+                                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                             </div>
+                                             <div class="form-group">
+                                                  <label for="exampleInputPassword1">Opcion 2</label>
+                                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                             </div>
+                                             <div class="form-group">
+                                                  <label for="exampleInputPassword1">Opcion 3</label>
+                                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                             </div>
+                                             <div class="form-group">
+                                                  <label for="exampleInputPassword1">Opcion 4</label>
+                                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+                                             </div>
+                                             <div class="row justify-content-center">
+                                                  <div class="col-8">
+                                                       <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+                                                  </div>
+                                             </div>
+
+
+                                        </form>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- Modal -->
+
+
+
+
+                    <script src="js/jquery-3.3.1.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+               </body>
+               </html>
